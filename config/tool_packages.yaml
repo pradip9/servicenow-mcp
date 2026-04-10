@@ -53,17 +53,16 @@ catalog_builder:
 
 change_coordinator:
   # Change Lifecycle
+   - list_change_requests
   - create_change_request
   - update_change_request
-  - list_change_requests
   - get_change_request_details
   # Tasks & Approval
   - add_change_task
   - submit_change_for_approval
   - approve_change
   - reject_change
-  - list_change_requests
-
+  
 knowledge_author:
   # KB Management
   - create_knowledge_base
@@ -86,6 +85,7 @@ platform_developer:
   - update_script_include
   - delete_script_include
   - execute_script_include
+  - list_change_requests
   # Workflows
   - list_workflows
   - get_workflow_details
